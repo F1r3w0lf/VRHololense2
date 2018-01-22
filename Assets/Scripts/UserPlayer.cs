@@ -27,6 +27,7 @@ public class UserPlayer : Player {
             transform.GetComponent<Renderer>().material.color = Color.blue;
         } */
 
+
         if (HP<= 0)
         {
             transform.rotation = Quaternion.Euler(new Vector3(90,0,0));

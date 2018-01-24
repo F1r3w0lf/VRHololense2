@@ -82,7 +82,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e54b28759d07ef45ba1e3bb45f921ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visual: {fileID: 0}
+  type: 0
   gridPosition: {x: 0, y: 0}
+  movementCost: 1
+  impassible: 0
+  neighbors: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

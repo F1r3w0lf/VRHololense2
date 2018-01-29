@@ -360,6 +360,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraDistanceZ: 4
   cameraDistanceY: 0
+--- !u!1001 &905933357
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000012470722996, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012470722996, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012470722996, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012470722996, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012470722996, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012470722996, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012470722996, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012470722996, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c2843d1c1b873224fad0505be15b917e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1085221850
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +479,8 @@ GameObject:
   - component: {fileID: 1870438626}
   - component: {fileID: 1870438625}
   - component: {fileID: 1870438628}
+  - component: {fileID: 1870438630}
+  - component: {fileID: 1870438629}
   m_Layer: 0
   m_Name: HologramCollection
   m_TagString: Untagged
@@ -505,6 +549,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0f440a97ca89fa4498e96c0964a5506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1870438629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870438623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea2ac1fbf19a1242a473c66855c59ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1870438630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870438623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6ee51820a30ef489aeba1f0eaeceb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1959176054

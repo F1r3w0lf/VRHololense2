@@ -12,6 +12,11 @@ public class HologramPlacement : Singleton<HologramPlacement>
     /// </summary>
     public bool GotTransform { get; private set; }
 
+    /// <summary>
+    /// When the experience starts, we disable all of the rendering of the model.
+    /// </summary>
+    List<MeshRenderer> disabledRenderers = new List<MeshRenderer>();
+
     private Vector3 startPosition;
 
     public float cameraDistanceZ = 5.5f;
@@ -19,6 +24,8 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
     void Start()
     {
+        // When we first start, we need to disable the model to avoid it obstructing the user picking a hat.
+        DisableModel();
 
         // We care about getting updates for the anchor transform.
         CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.StageTransform] = this.OnStageTransfrom;
@@ -45,16 +52,62 @@ public class HologramPlacement : Singleton<HologramPlacement>
         }
     }
 
-    void Update()
+    /// <summary>
+    /// Turns off all renderers for the model.
+    /// </summary>
+    void DisableModel()
     {
-        if (GotTransform)
+        foreach (MeshRenderer renderer in gameObject.GetComponentsInChildren<MeshRenderer>())
         {
-            if (ImportExportAnchorManager.Instance.AnchorEstablished)
+            if (renderer.enabled)
             {
-                // Do something when an anchor is established to show it to the user
+                renderer.enabled = false;
+                disabledRenderers.Add(renderer);
             }
         }
-        else
+
+        foreach (MeshCollider collider in gameObject.GetComponentsInChildren<MeshCollider>())
+        {
+            collider.enabled = false;
+        }
+    }
+
+    /// <summary>
+    /// Turns on all renderers that were disabled.
+    /// </summary>
+    void EnableModel()
+    {
+        foreach (MeshRenderer renderer in disabledRenderers)
+        {
+            renderer.enabled = true;
+        }
+
+        foreach (MeshCollider collider in gameObject.GetComponentsInChildren<MeshCollider>())
+        {
+            collider.enabled = true;
+        }
+
+        disabledRenderers.Clear();
+    }
+
+    void Update()
+    {
+        if (disabledRenderers.Count > 0)
+        {
+            if (!PlayerAvatarStore.Instance.PickerActive &&
+                ImportExportAnchorManager.Instance.AnchorEstablished)
+            {
+                // After which we want to start rendering.
+                EnableModel();
+
+                // And if we've already been sent the relative transform, we will use it.
+                if (GotTransform)
+                {
+                    // Do something when the Anchor is set
+                }
+            }
+        }
+        else if (GotTransform == false)
         {
             Vector3 proposed = ProposeTransformPosition();
             //transform.position = Vector3.Lerp(transform.position, new Vector3(proposed.x, startPosition.y + proposed.y, startPosition.z), 0.2f);

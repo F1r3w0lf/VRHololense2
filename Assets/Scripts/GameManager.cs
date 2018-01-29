@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour {
 			removeTileHighlights();
 			players[currentPlayerIndex].moving = false;
 			foreach(Tile t in TilePathFinder.FindPath(map[(int)players[currentPlayerIndex].gridPosition.x][(int)players[currentPlayerIndex].gridPosition.y],destTile, players.Where(x => x.gridPosition != destTile.gridPosition && x.gridPosition != players[currentPlayerIndex].gridPosition).Select(x => x.gridPosition).ToArray())) {
-				players[currentPlayerIndex].positionQueue.Add(map[(int)t.gridPosition.x][(int)t.gridPosition.y].transform.position + 1.5f * Vector3.up);
+				players[currentPlayerIndex].positionQueue.Add(map[(int)t.gridPosition.x][(int)t.gridPosition.y].transform.position + 0.5f * Vector3.up);
 				Debug.Log("(" + players[currentPlayerIndex].positionQueue[players[currentPlayerIndex].positionQueue.Count - 1].x + "," + players[currentPlayerIndex].positionQueue[players[currentPlayerIndex].positionQueue.Count - 1].y + ")");
 			}			
 			players[currentPlayerIndex].gridPosition = destTile.gridPosition;
@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour {
 	void generatePlayers() {
 		UserPlayer player;
 		
-		player = ((GameObject)Instantiate(UserPlayerPrefab, new Vector3(0 - Mathf.Floor(mapSize/2),1.5f, -0 + Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<UserPlayer>();
+		player = ((GameObject)Instantiate(UserPlayerPrefab, new Vector3(0 - Mathf.Floor(mapSize/2),0.5f, -0 + Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<UserPlayer>();
 		player.gridPosition = new Vector2(0,0);
 		player.playerName = "Bob";
 		player.headArmor = Armor.FromKey(ArmorKey.LeatherCap);
@@ -181,7 +181,7 @@ public class GameManager : MonoBehaviour {
 		
 		players.Add(player);
 		
-		player = ((GameObject)Instantiate(UserPlayerPrefab, new Vector3((mapSize-1) - Mathf.Floor(mapSize/2),1.5f, -(mapSize-1) + Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<UserPlayer>();
+		player = ((GameObject)Instantiate(UserPlayerPrefab, new Vector3((mapSize-1) - Mathf.Floor(mapSize/2),0.5f, -(mapSize-1) + Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<UserPlayer>();
 		player.gridPosition = new Vector2(mapSize-1,mapSize-1);
 		player.playerName = "Kyle";
 		player.chestArmor = Armor.FromKey(ArmorKey.LeatherVest);
@@ -190,7 +190,7 @@ public class GameManager : MonoBehaviour {
 		
 		players.Add(player);
 				
-		player = ((GameObject)Instantiate(UserPlayerPrefab, new Vector3(4 - Mathf.Floor(mapSize/2),1.5f, -5 + Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<UserPlayer>();
+		player = ((GameObject)Instantiate(UserPlayerPrefab, new Vector3(4 - Mathf.Floor(mapSize/2),0.5f, -5 + Mathf.Floor(mapSize/2)), Quaternion.Euler(new Vector3()))).GetComponent<UserPlayer>();
 		player.gridPosition = new Vector2(4,5);
 		player.playerName = "Lars";
 		player.chestArmor = Armor.FromKey(ArmorKey.IronPlate);

@@ -346,9 +346,7 @@ MonoBehaviour:
   mapSize: 22
   players: []
   currentPlayerIndex: 0
-  playerStartHeightsY: 0.5
-  aiPlayerStartHeightsY: 1.75
-  textAsset: {fileID: 4900000, guid: 9cbb8348164235a4c99827729b19655b, type: 3}
+  mapTextAsset: {fileID: 4900000, guid: 9cbb8348164235a4c99827729b19655b, type: 3}
 --- !u!114 &796992295
 MonoBehaviour:
   m_ObjectHideFlags: 0

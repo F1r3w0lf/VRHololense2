@@ -60,11 +60,15 @@ public static class MapSaveLoad {
 		}
 	}
 
-	public static MapXmlContainer Load(string filename) {
-		var serializer = new XmlSerializer(typeof(MapXmlContainer));
-		using(var stream = new FileStream(filename, FileMode.Open))
-		{
-			return serializer.Deserialize(stream) as MapXmlContainer;
-		}
-	}
+    public static MapXmlContainer Load(TextAsset textAsset)
+    {
+        var serializer = new XmlSerializer(typeof(MapXmlContainer));
+        XmlDocument xmlDoc = new XmlDocument();
+        xmlDoc.LoadXml(textAsset.text);
+
+        using (XmlReader reader = XmlReader.Create((new StringReader(xmlDoc.InnerXml))))
+        {
+            return serializer.Deserialize(reader) as MapXmlContainer;
+        }
+    }
 }

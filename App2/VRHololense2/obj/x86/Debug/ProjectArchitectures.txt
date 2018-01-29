@@ -1,0 +1,2 @@
+C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App2\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App2\VRHololense2\VRHololense2.csproj;x86

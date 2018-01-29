@@ -50,7 +50,7 @@ public class MapCreatorManager : MonoBehaviour {
 	}
 
 	void loadMapFromXml() {
-		MapXmlContainer container = MapSaveLoad.Load("map.xml");
+		MapXmlContainer container = MapSaveLoad.Load(Resources.Load("map.xml") as TextAsset);
 
 		mapSize = container.size;
 		

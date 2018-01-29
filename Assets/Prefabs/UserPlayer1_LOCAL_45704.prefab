@@ -96,9 +96,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4653367012370158}
   - component: {fileID: 95582913633419726}
-  - component: {fileID: 114378033415536170}
   - component: {fileID: 23223546791222306}
   - component: {fileID: 136265091375535898}
+  - component: {fileID: 114378033415536170}
   m_Layer: 0
   m_Name: UserPlayer1
   m_TagString: Untagged
@@ -600,7 +600,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244509193846186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.39192, y: 4.729048, z: 4.54992}
+  m_LocalPosition: {x: 0.18031502, y: 9.713224, z: 9.434917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4374691152988240}
@@ -781,6 +781,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -796,6 +797,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -813,6 +815,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -828,6 +831,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -852,9 +856,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!95 &95582913633419726
@@ -911,9 +915,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 4.400817
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: -0.25351763, z: 0}
+  m_Center: {x: 0, y: 0.87, z: 0.06}
 --- !u!137 &137132270520528588
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -923,6 +927,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -938,6 +943,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

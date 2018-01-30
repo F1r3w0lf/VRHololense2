@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-29T22:56:10.688</Modified>
+      <Modified>2018-01-30T00:02:21.032</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\bin\x86\Debug\VRHololense2.exe">
       <PackagePath>entrypoint\VRHololense2.exe</PackagePath>
-      <Modified>2018-01-29T22:55:55.388</Modified>
+      <Modified>2018-01-30T00:02:05.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-01-29T22:51:05.519</Modified>
+      <Modified>2018-01-29T23:59:19.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -543,15 +543,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-01-29T22:50:11.749</Modified>
+      <Modified>2018-01-29T23:58:26.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-01-29T22:50:03.895</Modified>
+      <Modified>2018-01-29T23:58:24.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-01-29T22:50:02.786</Modified>
+      <Modified>2018-01-29T23:58:23.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -559,31 +559,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-01-29T22:50:11.746</Modified>
+      <Modified>2018-01-29T23:58:26.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-01-29T22:50:04.096</Modified>
+      <Modified>2018-01-29T23:58:25.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-01-29T22:50:11.367</Modified>
+      <Modified>2018-01-29T23:58:26.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-01-29T22:51:05.408</Modified>
+      <Modified>2018-01-29T23:59:18.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-01-29T22:51:05.410</Modified>
+      <Modified>2018-01-29T23:59:18.997</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-01-29T22:50:11.364</Modified>
+      <Modified>2018-01-29T23:58:26.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2018-01-29T22:50:11.372</Modified>
+      <Modified>2018-01-29T23:58:26.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.16299.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -596,227 +596,227 @@
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-29T22:55:56.211</Modified>
+      <Modified>2018-01-30T00:02:06.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:05.975</Modified>
+      <Modified>2018-01-30T00:02:16.578</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:05.983</Modified>
+      <Modified>2018-01-30T00:02:16.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:05.988</Modified>
+      <Modified>2018-01-30T00:02:16.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.039</Modified>
+      <Modified>2018-01-30T00:02:16.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.047</Modified>
+      <Modified>2018-01-30T00:02:16.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.053</Modified>
+      <Modified>2018-01-30T00:02:16.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.060</Modified>
+      <Modified>2018-01-30T00:02:16.669</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.064</Modified>
+      <Modified>2018-01-30T00:02:16.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.069</Modified>
+      <Modified>2018-01-30T00:02:16.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.073</Modified>
+      <Modified>2018-01-30T00:02:16.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.079</Modified>
+      <Modified>2018-01-30T00:02:16.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.091</Modified>
+      <Modified>2018-01-30T00:02:16.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.096</Modified>
+      <Modified>2018-01-30T00:02:16.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.101</Modified>
+      <Modified>2018-01-30T00:02:16.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.105</Modified>
+      <Modified>2018-01-30T00:02:16.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.111</Modified>
+      <Modified>2018-01-30T00:02:16.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.115</Modified>
+      <Modified>2018-01-30T00:02:16.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.119</Modified>
+      <Modified>2018-01-30T00:02:16.737</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.124</Modified>
+      <Modified>2018-01-30T00:02:16.743</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.138</Modified>
+      <Modified>2018-01-30T00:02:16.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.142</Modified>
+      <Modified>2018-01-30T00:02:16.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.148</Modified>
+      <Modified>2018-01-30T00:02:16.770</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.152</Modified>
+      <Modified>2018-01-30T00:02:16.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.164</Modified>
+      <Modified>2018-01-30T00:02:16.787</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.173</Modified>
+      <Modified>2018-01-30T00:02:16.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.177</Modified>
+      <Modified>2018-01-30T00:02:16.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.184</Modified>
+      <Modified>2018-01-30T00:02:16.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.188</Modified>
+      <Modified>2018-01-30T00:02:16.814</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.414</Modified>
+      <Modified>2018-01-30T00:02:17.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.419</Modified>
+      <Modified>2018-01-30T00:02:17.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.442</Modified>
+      <Modified>2018-01-30T00:02:17.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.451</Modified>
+      <Modified>2018-01-30T00:02:17.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.455</Modified>
+      <Modified>2018-01-30T00:02:17.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.459</Modified>
+      <Modified>2018-01-30T00:02:17.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.464</Modified>
+      <Modified>2018-01-30T00:02:17.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.468</Modified>
+      <Modified>2018-01-30T00:02:17.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.481</Modified>
+      <Modified>2018-01-30T00:02:17.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.486</Modified>
+      <Modified>2018-01-30T00:02:17.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.507</Modified>
+      <Modified>2018-01-30T00:02:17.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.512</Modified>
+      <Modified>2018-01-30T00:02:17.134</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.517</Modified>
+      <Modified>2018-01-30T00:02:17.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.522</Modified>
+      <Modified>2018-01-30T00:02:17.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-01-29T22:50:43.372</Modified>
+      <Modified>2018-01-29T23:58:57.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.540</Modified>
+      <Modified>2018-01-30T00:02:17.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.544</Modified>
+      <Modified>2018-01-30T00:02:17.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.575</Modified>
+      <Modified>2018-01-30T00:02:17.195</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.611</Modified>
+      <Modified>2018-01-30T00:02:17.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.695</Modified>
+      <Modified>2018-01-30T00:02:17.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.706</Modified>
+      <Modified>2018-01-30T00:02:17.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.719</Modified>
+      <Modified>2018-01-30T00:02:17.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.732</Modified>
+      <Modified>2018-01-30T00:02:17.353</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\AudioIO2.dll">
       <PackagePath>AudioIO2.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.740</Modified>
+      <Modified>2018-01-30T00:02:17.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-01-29T22:56:06.790</Modified>
+      <Modified>2018-01-30T00:02:17.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-01-29T22:56:05.968</Modified>
+      <Modified>2018-01-30T00:02:16.571</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FrozenPlanet\Documents\Projekte\VRHoloLens2\App\VRHololense2\bin\x86\Debug\Core\VRHololense2.exe">
       <PackagePath>VRHololense2.exe</PackagePath>
-      <Modified>2018-01-29T22:56:10.681</Modified>
+      <Modified>2018-01-30T00:02:21.028</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

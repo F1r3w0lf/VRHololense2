@@ -31,8 +31,8 @@ public class GameManager : MonoBehaviour {
 		generatePlayers();
 
 	    gameObject.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
-	    gameObject.transform.parent.localScale = new Vector3(0.25f, 0.25f, 0.25f);
-	    gameObject.transform.position = new Vector3(0f, -2f, 7f);
+	    gameObject.transform.parent.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+	    //gameObject.transform.position = new Vector3(0f, -2f, 7f);
     }
 	
 	// Update is called once per frame

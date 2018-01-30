@@ -15783,7 +15783,7 @@
       "projectPath": "C:\\Users\\FrozenPlanet\\Documents\\Projekte\\VRHoloLens2\\App2\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
       "projectJsonPath": "C:\\Users\\FrozenPlanet\\Documents\\Projekte\\VRHoloLens2\\App2\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
       "packagesPath": "C:\\Users\\FrozenPlanet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FrozenPlanet\\Documents\\Projekte\\VRHoloLens2\\App2\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\ARM\\Master\\",
+      "outputPath": "C:\\Users\\FrozenPlanet\\Documents\\Projekte\\VRHoloLens2\\App2\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\x86\\Debug\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\FrozenPlanet\\AppData\\Roaming\\NuGet\\NuGet.Config",

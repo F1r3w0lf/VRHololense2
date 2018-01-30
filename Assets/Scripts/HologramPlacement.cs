@@ -17,9 +17,14 @@ public class HologramPlacement : Singleton<HologramPlacement>
     /// </summary>
     List<MeshRenderer> disabledRenderers = new List<MeshRenderer>();
 
+    /// <summary>
+    /// We use a voice command to enable moving the target.
+    /// </summary>
+    KeywordRecognizer keywordRecognizer;
+
     private Vector3 startPosition;
 
-    public float cameraDistanceZ = 5.5f;
+    public float cameraDistanceZ = 2f;
     public float cameraDistanceY = -1f;
 
     void Start()
@@ -33,11 +38,54 @@ public class HologramPlacement : Singleton<HologramPlacement>
         // And when a new user join we will send the anchor transform we have.
         SharingSessionTracker.Instance.SessionJoined += Instance_SessionJoined;
 
-        //// Start by making the model as the cursor.
-        //// So the user can put the hologram where they want.
-        //GestureManager.Instance.OverrideFocusedObject = this.gameObject;
+        // And if the users want to reset the stage transform.
+        CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.ResetStage] = this.OnResetStage;
+
+        // Setup a keyword recognizer to enable resetting the target location.
+        List<string> keywords = new List<string>();
+        keywords.Add("Reset Target");
+        keywordRecognizer = new KeywordRecognizer(keywords.ToArray());
+        keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
+        keywordRecognizer.Start();
+
         startPosition = transform.position;
     }
+
+    /// <summary>
+    /// When the keyword recognizer hears a command this will be called.  
+    /// In this case we only have one keyword, which will re-enable moving the 
+    /// target.
+    /// </summary>
+    /// <param name="args">information to help route the voice command.</param>
+    private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
+    {
+        ResetStage();
+    }
+
+    /// <summary>
+    /// Resets the stage transform, so users can place the target again.
+    /// </summary>
+    public void ResetStage()
+    {
+        GotTransform = false;
+
+        // AppStateManager needs to know about this so that
+        // the right objects get input routed to them.
+        AppStateManager.Instance.ResetStage();
+
+        // Other devices in the experience need to know about this as well.
+        CustomMessages.Instance.SendResetStage();
+    }
+
+    /// <summary>
+    /// When a remote system has a transform for us, we'll get it here.
+    /// </summary>
+    void OnResetStage(NetworkInMessage msg)
+    {
+        GotTransform = false;
+        AppStateManager.Instance.ResetStage();
+    }
+
 
     /// <summary>
     /// When a new user joins we want to send them the relative transform for the anchor if we have it.
@@ -118,11 +166,52 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
     Vector3 ProposeTransformPosition()
     {
-        // Put the model cameraDistanceZ meter in front of the user.
-        Vector3 retval = Camera.main.transform.position + Camera.main.transform.forward * cameraDistanceZ;
+        Vector3 retval;
+        // We need to know how many users are in the experience with good transforms.
+        Vector3 cumulatedPosition = Camera.main.transform.position;
+        int playerCount = 1;
+        foreach (RemotePlayerManager.RemoteHeadInfo remoteHead in RemotePlayerManager.Instance.remoteHeadInfos)
+        {
+            if (remoteHead.Anchored && remoteHead.Active)
+            {
+                playerCount++;
+                cumulatedPosition += remoteHead.HeadObject.transform.position;
+            }
+        }
 
+        // If we have more than one player ...
+        if (playerCount > 1)
+        {
+            // Put the transform in between the players.
+            retval = cumulatedPosition / playerCount;
+            RaycastHit hitInfo;
+
+            // And try to put the transform on a surface below the midpoint of the players.
+            if (Physics.Raycast(retval, Vector3.down, out hitInfo, 5, SpatialMappingManager.Instance.LayerMask))
+            {
+                retval = hitInfo.point;
+            }
+        }
+        // If we are the only player, have the model act as the 'cursor' ...
+        else
+        {
+            // We prefer to put the model on a real world surface.
+            RaycastHit hitInfo;
+
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hitInfo, 30, SpatialMappingManager.Instance.LayerMask))
+            {
+                retval = hitInfo.point;
+            }
+            else
+            {
+                // But if we don't have a ray that intersects the real world, just put the model 2m in
+                // front of the user.
+                retval = Camera.main.transform.position + Camera.main.transform.forward * cameraDistanceZ;
+            }
+        }
         return retval;
     }
+
 
     public void OnSelect()
     {
@@ -153,10 +242,5 @@ public class HologramPlacement : Singleton<HologramPlacement>
         //}
 
         GotTransform = true;
-    }
-
-    public void ResetStage()
-    {
-        // We'll use this later.
     }
 }

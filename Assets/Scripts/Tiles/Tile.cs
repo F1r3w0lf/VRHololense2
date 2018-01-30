@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Academy.HoloToolkit.Unity;
+using UnityEngine.SceneManagement;
 
 public class Tile : MonoBehaviour {
 
@@ -62,7 +64,33 @@ public class Tile : MonoBehaviour {
 	void OnMouseExit() {
 
 	}
-	
+
+    public void OnSelect()
+    {
+        Debug.Log("Tile selected!");
+        if (SceneManager.GetActiveScene().name == "gameScene")
+        {
+            Debug.Log("gameScene");
+            if (GameManager.instance.players[GameManager.instance.currentPlayerIndex].moving)
+            {
+                GameManager.instance.moveCurrentPlayer(this);
+            }
+            else if (GameManager.instance.players[GameManager.instance.currentPlayerIndex].attacking)
+            {
+                GameManager.instance.attackWithCurrentPlayer(this);
+            }
+            else
+            {
+                impassible = !impassible;
+                visual.transform.GetComponent<Renderer>().materials[0].color = impassible ? new Color(.5f, .5f, 0.0f) : Color.white;
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "MapCreatorScene")
+        {
+            Debug.Log("MapCreatorScene");
+            setType(MapCreatorManager.instance.palletSelection);
+        }
+    }
 	
 	void OnMouseDown() {
 		if (Application.loadedLevelName == "gameScene") {

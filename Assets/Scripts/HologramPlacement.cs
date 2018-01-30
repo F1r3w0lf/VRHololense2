@@ -12,19 +12,16 @@ public class HologramPlacement : Singleton<HologramPlacement>
     /// </summary>
     public bool GotTransform { get; private set; }
 
-    /// <summary>
-    /// When the experience starts, we disable all of the rendering of the model.
-    /// </summary>
-    List<MeshRenderer> disabledRenderers = new List<MeshRenderer>();
+    private bool disabledMap = false;
 
-    /// <summary>
-    /// We use a voice command to enable moving the target.
-    /// </summary>
-    KeywordRecognizer keywordRecognizer;
+    ///// <summary>
+    ///// We use a voice command to enable moving the target.
+    ///// </summary>
+    //KeywordRecognizer keywordRecognizer;
 
     private Vector3 startPosition;
 
-    public float cameraDistanceZ = 2f;
+    public float cameraDistanceZ = 1f;
     public float cameraDistanceY = -1f;
 
     void Start()
@@ -42,25 +39,26 @@ public class HologramPlacement : Singleton<HologramPlacement>
         CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.ResetStage] = this.OnResetStage;
 
         // Setup a keyword recognizer to enable resetting the target location.
-        List<string> keywords = new List<string>();
-        keywords.Add("Reset Target");
-        keywordRecognizer = new KeywordRecognizer(keywords.ToArray());
-        keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
-        keywordRecognizer.Start();
+        //List<string> keywords = new List<string>();
+        //keywords.Add("Move Map");
+        //keywordRecognizer = new KeywordRecognizer(keywords.ToArray());
+        //keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
+        //keywordRecognizer.Start();
 
         startPosition = transform.position;
     }
 
-    /// <summary>
-    /// When the keyword recognizer hears a command this will be called.  
-    /// In this case we only have one keyword, which will re-enable moving the 
-    /// target.
-    /// </summary>
-    /// <param name="args">information to help route the voice command.</param>
-    private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
-    {
-        ResetStage();
-    }
+    ///// <summary>
+    ///// When the keyword recognizer hears a command this will be called.  
+    ///// In this case we only have one keyword, which will re-enable moving the 
+    ///// target.
+    ///// </summary>
+    ///// <param name="args">information to help route the voice command.</param>
+    //private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
+    //{
+    //    Debug.Log(args.text);
+    //    ResetStage();
+    //}
 
     /// <summary>
     /// Resets the stage transform, so users can place the target again.
@@ -105,19 +103,25 @@ public class HologramPlacement : Singleton<HologramPlacement>
     /// </summary>
     void DisableModel()
     {
-        foreach (MeshRenderer renderer in gameObject.GetComponentsInChildren<MeshRenderer>())
+        for (var i = 0; i < transform.childCount; i++)
         {
-            if (renderer.enabled)
-            {
-                renderer.enabled = false;
-                disabledRenderers.Add(renderer);
-            }
+            transform.GetChild(i).gameObject.SetActive(false);
         }
 
-        foreach (MeshCollider collider in gameObject.GetComponentsInChildren<MeshCollider>())
-        {
-            collider.enabled = false;
-        }
+        disabledMap = true;
+        //foreach (MeshRenderer renderer in gameObject.GetComponentsInChildren<MeshRenderer>())
+        //{
+        //    if (renderer.enabled)
+        //    {
+        //        renderer.enabled = false;
+        //        disabledRenderers.Add(renderer);
+        //    }
+        //}
+
+        //foreach (MeshCollider collider in gameObject.GetComponentsInChildren<MeshCollider>())
+        //{
+        //    collider.enabled = false;
+        //}
     }
 
     /// <summary>
@@ -125,22 +129,29 @@ public class HologramPlacement : Singleton<HologramPlacement>
     /// </summary>
     void EnableModel()
     {
-        foreach (MeshRenderer renderer in disabledRenderers)
+        for (var i = 0; i < transform.childCount; i++)
         {
-            renderer.enabled = true;
+            transform.GetChild(i).gameObject.SetActive(true);
         }
 
-        foreach (MeshCollider collider in gameObject.GetComponentsInChildren<MeshCollider>())
-        {
-            collider.enabled = true;
-        }
+        disabledMap = false;
 
-        disabledRenderers.Clear();
+        //foreach (MeshRenderer renderer in disabledRenderers)
+        //{
+        //    renderer.enabled = true;
+        //}
+
+        //foreach (MeshCollider collider in gameObject.GetComponentsInChildren<MeshCollider>())
+        //{
+        //    collider.enabled = true;
+        //}
+
+        //disabledRenderers.Clear();
     }
 
     void Update()
     {
-        if (disabledRenderers.Count > 0)
+        if (disabledMap)
         {
             if (!PlayerAvatarStore.Instance.PickerActive &&
                 ImportExportAnchorManager.Instance.AnchorEstablished)

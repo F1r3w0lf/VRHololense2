@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
 	public Vector2 gridPosition = Vector2.zero;
 	
 	public Vector3 moveDestination;
-	public float moveSpeed = 10.0f;
+	public float moveSpeed = 0.1f;
 
 	public bool moving = false;
 	public bool attacking = false;

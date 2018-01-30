@@ -32,11 +32,36 @@ namespace Academy.HoloToolkit.Unity
             // Create a new GestureRecognizer. Sign up for tapped events.
             gestureRecognizer = new GestureRecognizer();
             gestureRecognizer.SetRecognizableGestures(GestureSettings.Tap);
+            //gestureRecognizer.SetRecognizableGestures(GestureSettings.ManipulationTranslate);
 
             gestureRecognizer.Tapped += GestureRecognizer_Tapped;
+            //gestureRecognizer.ManipulationStarted += GestureRecognizer_ManipulationStarted;
+            //gestureRecognizer.ManipulationUpdated += GestureRecognizer_ManipulationUpdated;
+            //gestureRecognizer.ManipulationCompleted += GestureRecognizer_ManipulationCompleted;
+            //gestureRecognizer.ManipulationCanceled += GestureRecognizer_ManipulationCanceled;
 
             // Start looking for gestures.
             gestureRecognizer.StartCapturingGestures();
+        }
+
+        private void GestureRecognizer_ManipulationCanceled(ManipulationCanceledEventArgs obj)
+        {
+            Debug.Log("Manipulation canceled.");
+        }
+
+        private void GestureRecognizer_ManipulationCompleted(ManipulationCompletedEventArgs obj)
+        {
+            Debug.Log("Manipulation completed.");
+        }
+
+        private void GestureRecognizer_ManipulationUpdated(ManipulationUpdatedEventArgs obj)
+        {
+            Debug.Log("Manipulation updated.");
+        }
+
+        private void GestureRecognizer_ManipulationStarted(ManipulationStartedEventArgs obj)
+        {
+           Debug.Log("Manipulation started.");
         }
 
         private void GestureRecognizer_Tapped(TappedEventArgs args)
@@ -78,6 +103,11 @@ namespace Academy.HoloToolkit.Unity
         {
             gestureRecognizer.StopCapturingGestures();
             gestureRecognizer.Tapped -= GestureRecognizer_Tapped;
+        }
+
+        public GameObject GetFocusedObject()
+        {
+            return focusedObject;
         }
     }
 }

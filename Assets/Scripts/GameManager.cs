@@ -126,9 +126,9 @@ public class GameManager : MonoBehaviour
             foreach (Tile t in TilePathFinder.FindPath(map[(int)players[currentPlayerIndex].gridPosition.x][(int)players[currentPlayerIndex].gridPosition.y], destTile, players.Where(x => x.gridPosition != destTile.gridPosition && x.gridPosition != players[currentPlayerIndex].gridPosition).Select(x => x.gridPosition).ToArray()))
             {
                 players[currentPlayerIndex].positionQueue.Add(new Vector3(
-                                                              t.transform.position.x - players[currentPlayerIndex].transform.position.x,
+                                                              t.transform.position.x,
                                                               players[currentPlayerIndex].transform.position.y,
-                                                              t.transform.position.z - players[currentPlayerIndex].transform.position.z
+                                                              t.transform.position.z
                                                               ));
 
                 Debug.Log("map Position: x = " + map[(int)t.gridPosition.x][(int)t.gridPosition.y].transform.position.x

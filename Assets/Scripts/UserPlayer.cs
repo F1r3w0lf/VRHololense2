@@ -23,12 +23,16 @@ public class UserPlayer : Player {
 		//highlight
 		//
 		//
-		
+
 		if (positionQueue.Count > 0) {
 			transform.position += (positionQueue[0] - transform.position).normalized * moveSpeed * Time.deltaTime;
-			
-			if (Vector3.Distance(positionQueue[0], transform.position) <= 0.01f) {
-				transform.position = positionQueue[0];
+
+            transform.LookAt(positionQueue[0]);
+
+
+            if (Vector3.Distance(positionQueue[0], transform.position) <= 0.01f) {
+                transform.LookAt(positionQueue[0]);
+                transform.position = positionQueue[0];
 				positionQueue.RemoveAt(0);
 				if (positionQueue.Count == 0) {
 					actionPoints--;
